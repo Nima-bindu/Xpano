@@ -1,4 +1,4 @@
-let API_BASE_URL="http://127.0.0.1:5000"
+let API_BASE_URL="https://gmail.googleapis.com"
 
 document.addEventListener('DOMContentLoaded', function() {
     var scannerBtn = document.getElementById('scanner');
