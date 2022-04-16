@@ -6,3 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
         verifyUrls();
     });
 });
+
+const verifyUrls = () => {
+    chrome.tabs.query( {currentWindow: true, active: true}, (tabs) => {
+        chrome.scripting.executeScript({
+            target: {tabId: tabs[0].id, allFrames: true},
+            files: ['script.js'],
+        });
+
+    })
+}
