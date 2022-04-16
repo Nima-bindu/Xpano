@@ -1,7 +1,7 @@
 body {
     width: 400px;
     height: 210px;
-    background: linear-gradient(125deg, rgb(255, 255, 255) 5%, rgb(11, 216, 226) 95%);
+    background: linear-gradient(125deg, rgb(255, 255, 255) 25%, rgb(11, 216, 226) 75%);
     background-color: rgb(175, 207, 183);
     border-radius: 2px;
     padding: 10px;
