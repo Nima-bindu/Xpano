@@ -1,0 +1,22 @@
+{
+    "name": "Xpano",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "An Extension to detect Spam Mails in your Inbox...!! Filters your Inbox and will make it Spam Free...!!",
+    "content_scripts": [
+        {
+            "matches": ["https://mail.google.com/"],
+            "css": ["style.css"],
+            "js": ["script.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Spam Detection",
+        "default_icon": "logo1.png"
+    },
+    "permissions": ["tabs", "storage", "notifications"],
+    "icons": {
+        "128": "logo1.png"
+    }
+}
