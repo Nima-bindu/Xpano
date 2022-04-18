@@ -5,18 +5,18 @@
     "description": "An Extension to detect Spam Mails in your Inbox...!! Filters your Inbox and will make it Spam Free...!!",
     "content_scripts": [
         {
-            "matches": ["https://mail.google.com/"],
+            "matches": ["https://mail.google.com/","https://mail.google.com/mail/u/0/#inbox/"],
             "css": ["style.css"],
-            "js": ["script.js"]
+            "js": ["script.js","jquery.min.js"]
         }
     ],
     "action": {
         "default_popup": "popup.html",
         "default_title": "Spam Detection",
-        "default_icon": "logo1.png"
+        "default_icon": "assets/logo1.png"
     },
-    "permissions": ["tabs", "storage", "notifications", "scripting"],
+    "permissions": ["tabs","activeTab", "storage", "notifications", "scripting"],
     "icons": {
-        "128": "logo1.png"
+        "128": "assets/logo1.png"
     }
 }
